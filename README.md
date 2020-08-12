@@ -1,5 +1,7 @@
 # kiranaStore_prediction
 
+
+
 # PROBLEM STATEMENT
 We have the merged csv file of some of the verified regions of India. Our motive is to build a model on the verified data set, so that it can be used to predict that data points of the non- verified merged data set.
 This project includes Outlier detection, null detection, missing values handling and build the model for the targeted data points. And also validation and visualization of the results.
@@ -93,7 +95,7 @@ y_test.shape – (217)
 As , this is a regression problem, I applied few machine learning regression algorithms, on the top of this data and evaluate their performance on the basis of r^2 value i.e. the “coefficient of determination” and also mean squared error.
 We get the results as follows :
  
-     Algorithm or Models	                       R^2 Score
+     Algorithm or Models	            R^2 Score
 1.	Linear regression		                       91.23994554523007
 2.	Lasso	                                    91.23410794553413
 3.	KNeighborsRegressor	                      82.21029554648494
@@ -105,8 +107,8 @@ We get the results as follows :
 # RESULTS
 
 By looking at the r^2 value of the algorithms, we get the best result with random forest regressor , so I used it to predict the values of target value, using the x_test data points. And later comparing it with the actual values of the target variable i.e. y_test.
-Then I created a dataframe having the actual values and predicted values of the target data point and also calculated their residual value (actual values - predicted values). And we got results as following :
-
+Then I created a dataframe having the actual values and predicted values of the target data point and also calculated their residual value (actual values - predicted values). 
+you can see in the prediction report .
 
 
 
